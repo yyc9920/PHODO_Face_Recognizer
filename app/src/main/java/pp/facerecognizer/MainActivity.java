@@ -293,6 +293,8 @@ public class MainActivity extends CameraActivity implements OnImageAvailableList
 
                     fin_X = (int) ((tracker.getFinX() / Device_width)*3100);
                     int fin_Y = (int) ((tracker.getFinY() / Device_height)*4000);
+                    fin_X = 1000 - fin_X;
+                    fin_Y = 1000 - fin_Y;
                     if(fin_X > 1000) fin_X = 1000;
                     if(fin_Y > 1000) fin_Y = 1000;
                     if(fin_X < 0) fin_X = 0;
